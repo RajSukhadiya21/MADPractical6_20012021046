@@ -27,6 +27,10 @@ class MainActivity : AppCompatActivity() {
         myvideoview.requestFocus()
         myvideoview.start()
 
-
+        myplaybtn.setOnClickListener {
+            Intent(this,YouTubeActivity::class.java).apply{
+                startActivity(this)
+            }
+        }
     }
 }

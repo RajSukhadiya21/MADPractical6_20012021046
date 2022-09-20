@@ -9,7 +9,7 @@ import android.widget.VideoView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class YouTubeActivity : AppCompatActivity() {
-    private val youtubeId="fJn9B64Znrk"
+    private val youtubeId="enWy-sSrPKM"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_you_tube)
@@ -21,11 +21,12 @@ class YouTubeActivity : AppCompatActivity() {
                 startActivity(this)
             }
         }
+
         val webSettings:WebSettings=mywebview.settings
         webSettings.javaScriptEnabled=true
         webSettings.loadWithOverviewMode=true
         webSettings.useWideViewPort=true
-        mywebview.loadUrl("https://www.youtube.com/embed/$youtubeId")
+        mywebview.loadUrl("https://www.youtube.com/$youtubeId")
         }
 
     }

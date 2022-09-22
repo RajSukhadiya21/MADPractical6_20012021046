@@ -26,7 +26,7 @@ class YouTubeActivity : AppCompatActivity() {
         webSettings.javaScriptEnabled=true
         webSettings.loadWithOverviewMode=true
         webSettings.useWideViewPort=true
-        mywebview.loadUrl("https://www.youtube.com/$youtubeId")
+        mywebview.loadUrl("https://www.youtube.com/embed/$youtubeId")
         }
 
     }
